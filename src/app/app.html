@@ -1,11 +1,15 @@
-<h1>Pokémon</h1>
+<h1 class="titulo">Pokémon</h1>
 
-<ul>
-  <li *ngFor="let personaje of personajes">
-    <img [src]="personaje.image" width="80" />
-    <br />
-    {{ personaje.name }}
+<ul class="contenedor">
+
+  <li class="card" *ngFor="let personaje of personajes">
+
+    <img [src]="personaje.image" width="100" />
+
+    <h3>{{ personaje.name }}</h3>
+
   </li>
+
 </ul>
 
 <router-outlet />
